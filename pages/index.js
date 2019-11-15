@@ -11,6 +11,7 @@ import fetch from 'isomorphic-unfetch';
 import withStyles from 'react-jss';
 
 import Layout from '../components/Layout/Layout';
+import Login from '../components/Login/login';
 
 const styles = {
   container: {
@@ -54,6 +55,8 @@ function Index(props) {
           <a>How about preact?</a>
         </Link>
       </div>
+
+      <Login />
     </Layout>
   );
 }
