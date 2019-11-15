@@ -1,0 +1,39 @@
+{
+  "presets": ["next/babel"],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "react-intl",
+          {
+            "messagesDir": "lang/.messages/"
+          }
+        ],
+        [
+          "import",
+          {
+            "libraryName": "antd-mobile",
+            "style": "css"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        [
+          "react-intl",
+          {
+            "messagesDir": "lang/.messages/"
+          }
+        ],
+        [
+          "import",
+          {
+            "libraryName": "antd-mobile",
+            "style": "css"
+          }
+        ]
+      ]
+    }
+  }
+}
